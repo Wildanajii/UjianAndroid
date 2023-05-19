@@ -76,7 +76,7 @@
         android:paddingStart="3dp"
         android:paddingEnd="3dp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
-        tools:ignore="SpeakableTextPresentCheck"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="100dp" />
 
     <Button
@@ -96,12 +96,13 @@
     <EditText
         android:id="@+id/edUmur"
         android:layout_width="212dp"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:background="#FFFDFD"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="number"
         android:textColorLink="#F4F4F4"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteX="101dp"
         tools:layout_editor_absoluteY="502dp" />
 
