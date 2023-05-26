@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
                 if(isian_nama_depan.isEmpty()){
                     Toast.makeText(getApplicationContext(), "Isian masih kosong", Toast.LENGTH_SHORT).show();
                 }else{
-                    String nama_lengkap = isian_nama_depan.concat(" ").concat(isian_nama_belakang);
-                    daftar_nama.clear();
-                    for(int i  = 0;i < isian_umur;i++){
+                    ArrayList<String> daftar_nama = new ArrayList<>();
+                    for(int i  = 0;i <= isian_umur;i++){
+                        String nama_lengkap = i + ". " + isian_nama_depan + " " + isian_nama_belakang;
                         daftar_nama.add(nama_lengkap);
                     }
                     edNamaDepan.setText("");
